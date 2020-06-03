@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F53F423824627FE9000D81FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53F423724627FE9000D81FA /* AppDelegate.swift */; };
+		F53F423A24627FE9000D81FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53F423924627FE9000D81FA /* SceneDelegate.swift */; };
+		F53F424224627FE9000D81FA /* RamExpandableTable.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F53F424024627FE9000D81FA /* RamExpandableTable.xcdatamodeld */; };
+		F53F424424627FEB000D81FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F53F424324627FEB000D81FA /* Assets.xcassets */; };
+		F53F424724627FEB000D81FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F53F424524627FEB000D81FA /* LaunchScreen.storyboard */; };
+		F53F425224627FEB000D81FA /* RamExpandableTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53F425124627FEB000D81FA /* RamExpandableTableTests.swift */; };
+		F53F425D24627FEB000D81FA /* RamExpandableTableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53F425C24627FEB000D81FA /* RamExpandableTableUITests.swift */; };
+		F53F427324628335000D81FA /* CollapsibleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53F426E24628335000D81FA /* CollapsibleTableViewCell.swift */; };
+		F53F427424628335000D81FA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53F426F24628335000D81FA /* Extensions.swift */; };
+		F53F427524628335000D81FA /* ExampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53F427024628335000D81FA /* ExampleData.swift */; };
+		F53F427624628335000D81FA /* CollapsibleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53F427124628335000D81FA /* CollapsibleTableViewController.swift */; };
+		F53F427724628335000D81FA /* CollapsibleTableViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53F427224628335000D81FA /* CollapsibleTableViewHeader.swift */; };
+		F59A9E582486244A0076915E /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A9E572486244A0076915E /* ViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F53F424E24627FEB000D81FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F53F422C24627FE9000D81FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F53F423324627FE9000D81FA;
+			remoteInfo = RamExpandableTable;
+		};
+		F53F425924627FEB000D81FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F53F422C24627FE9000D81FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F53F423324627FE9000D81FA;
+			remoteInfo = RamExpandableTable;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F53F423424627FE9000D81FA /* RamExpandableTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RamExpandableTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F53F423724627FE9000D81FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F53F423924627FE9000D81FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F53F424124627FE9000D81FA /* RamExpandableTable.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RamExpandableTable.xcdatamodel; sourceTree = "<group>"; };
+		F53F424324627FEB000D81FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F53F424624627FEB000D81FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F53F424824627FEB000D81FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F53F424D24627FEB000D81FA /* RamExpandableTableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RamExpandableTableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F53F425124627FEB000D81FA /* RamExpandableTableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamExpandableTableTests.swift; sourceTree = "<group>"; };
+		F53F425324627FEB000D81FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F53F425824627FEB000D81FA /* RamExpandableTableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RamExpandableTableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F53F425C24627FEB000D81FA /* RamExpandableTableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RamExpandableTableUITests.swift; sourceTree = "<group>"; };
+		F53F425E24627FEB000D81FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F53F426E24628335000D81FA /* CollapsibleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewCell.swift; sourceTree = "<group>"; };
+		F53F426F24628335000D81FA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		F53F427024628335000D81FA /* ExampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleData.swift; sourceTree = "<group>"; };
+		F53F427124628335000D81FA /* CollapsibleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewController.swift; sourceTree = "<group>"; };
+		F53F427224628335000D81FA /* CollapsibleTableViewHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsibleTableViewHeader.swift; sourceTree = "<group>"; };
+		F59A9E572486244A0076915E /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F53F423124627FE9000D81FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F53F424A24627FEB000D81FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F53F425524627FEB000D81FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F53F422B24627FE9000D81FA = {
+			isa = PBXGroup;
+			children = (
+				F53F423624627FE9000D81FA /* RamExpandableTable */,
+				F53F425024627FEB000D81FA /* RamExpandableTableTests */,
+				F53F425B24627FEB000D81FA /* RamExpandableTableUITests */,
+				F53F423524627FE9000D81FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F53F423524627FE9000D81FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F53F423424627FE9000D81FA /* RamExpandableTable.app */,
+				F53F424D24627FEB000D81FA /* RamExpandableTableTests.xctest */,
+				F53F425824627FEB000D81FA /* RamExpandableTableUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F53F423624627FE9000D81FA /* RamExpandableTable */ = {
+			isa = PBXGroup;
+			children = (
+				F59A9E572486244A0076915E /* ViewModel.swift */,
+				F53F423724627FE9000D81FA /* AppDelegate.swift */,
+				F53F423924627FE9000D81FA /* SceneDelegate.swift */,
+				F53F426E24628335000D81FA /* CollapsibleTableViewCell.swift */,
+				F53F427124628335000D81FA /* CollapsibleTableViewController.swift */,
+				F53F427224628335000D81FA /* CollapsibleTableViewHeader.swift */,
+				F53F427024628335000D81FA /* ExampleData.swift */,
+				F53F426F24628335000D81FA /* Extensions.swift */,
+				F53F424324627FEB000D81FA /* Assets.xcassets */,
+				F53F424524627FEB000D81FA /* LaunchScreen.storyboard */,
+				F53F424824627FEB000D81FA /* Info.plist */,
+				F53F424024627FE9000D81FA /* RamExpandableTable.xcdatamodeld */,
+			);
+			path = RamExpandableTable;
+			sourceTree = "<group>";
+		};
+		F53F425024627FEB000D81FA /* RamExpandableTableTests */ = {
+			isa = PBXGroup;
+			children = (
+				F53F425124627FEB000D81FA /* RamExpandableTableTests.swift */,
+				F53F425324627FEB000D81FA /* Info.plist */,
+			);
+			path = RamExpandableTableTests;
+			sourceTree = "<group>";
+		};
+		F53F425B24627FEB000D81FA /* RamExpandableTableUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F53F425C24627FEB000D81FA /* RamExpandableTableUITests.swift */,
+				F53F425E24627FEB000D81FA /* Info.plist */,
+			);
+			path = RamExpandableTableUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F53F423324627FE9000D81FA /* RamExpandableTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F53F426124627FEB000D81FA /* Build configuration list for PBXNativeTarget "RamExpandableTable" */;
+			buildPhases = (
+				F53F423024627FE9000D81FA /* Sources */,
+				F53F423124627FE9000D81FA /* Frameworks */,
+				F53F423224627FE9000D81FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RamExpandableTable;
+			productName = RamExpandableTable;
+			productReference = F53F423424627FE9000D81FA /* RamExpandableTable.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F53F424C24627FEB000D81FA /* RamExpandableTableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F53F426424627FEB000D81FA /* Build configuration list for PBXNativeTarget "RamExpandableTableTests" */;
+			buildPhases = (
+				F53F424924627FEB000D81FA /* Sources */,
+				F53F424A24627FEB000D81FA /* Frameworks */,
+				F53F424B24627FEB000D81FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F53F424F24627FEB000D81FA /* PBXTargetDependency */,
+			);
+			name = RamExpandableTableTests;
+			productName = RamExpandableTableTests;
+			productReference = F53F424D24627FEB000D81FA /* RamExpandableTableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F53F425724627FEB000D81FA /* RamExpandableTableUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F53F426724627FEB000D81FA /* Build configuration list for PBXNativeTarget "RamExpandableTableUITests" */;
+			buildPhases = (
+				F53F425424627FEB000D81FA /* Sources */,
+				F53F425524627FEB000D81FA /* Frameworks */,
+				F53F425624627FEB000D81FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F53F425A24627FEB000D81FA /* PBXTargetDependency */,
+			);
+			name = RamExpandableTableUITests;
+			productName = RamExpandableTableUITests;
+			productReference = F53F425824627FEB000D81FA /* RamExpandableTableUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F53F422C24627FE9000D81FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Ramkumar;
+				TargetAttributes = {
+					F53F423324627FE9000D81FA = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					F53F424C24627FEB000D81FA = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = F53F423324627FE9000D81FA;
+					};
+					F53F425724627FEB000D81FA = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = F53F423324627FE9000D81FA;
+					};
+				};
+			};
+			buildConfigurationList = F53F422F24627FE9000D81FA /* Build configuration list for PBXProject "RamExpandableTable" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F53F422B24627FE9000D81FA;
+			productRefGroup = F53F423524627FE9000D81FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F53F423324627FE9000D81FA /* RamExpandableTable */,
+				F53F424C24627FEB000D81FA /* RamExpandableTableTests */,
+				F53F425724627FEB000D81FA /* RamExpandableTableUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F53F423224627FE9000D81FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53F424724627FEB000D81FA /* LaunchScreen.storyboard in Resources */,
+				F53F424424627FEB000D81FA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F53F424B24627FEB000D81FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F53F425624627FEB000D81FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F53F423024627FE9000D81FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53F427624628335000D81FA /* CollapsibleTableViewController.swift in Sources */,
+				F59A9E582486244A0076915E /* ViewModel.swift in Sources */,
+				F53F427424628335000D81FA /* Extensions.swift in Sources */,
+				F53F427724628335000D81FA /* CollapsibleTableViewHeader.swift in Sources */,
+				F53F423824627FE9000D81FA /* AppDelegate.swift in Sources */,
+				F53F427524628335000D81FA /* ExampleData.swift in Sources */,
+				F53F423A24627FE9000D81FA /* SceneDelegate.swift in Sources */,
+				F53F427324628335000D81FA /* CollapsibleTableViewCell.swift in Sources */,
+				F53F424224627FE9000D81FA /* RamExpandableTable.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F53F424924627FEB000D81FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53F425224627FEB000D81FA /* RamExpandableTableTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F53F425424627FEB000D81FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F53F425D24627FEB000D81FA /* RamExpandableTableUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F53F424F24627FEB000D81FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F53F423324627FE9000D81FA /* RamExpandableTable */;
+			targetProxy = F53F424E24627FEB000D81FA /* PBXContainerItemProxy */;
+		};
+		F53F425A24627FEB000D81FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F53F423324627FE9000D81FA /* RamExpandableTable */;
+			targetProxy = F53F425924627FEB000D81FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F53F424524627FEB000D81FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F53F424624627FEB000D81FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F53F425F24627FEB000D81FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F53F426024627FEB000D81FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F53F426224627FEB000D81FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RamExpandableTable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cybersoft.TestPushNotifications.RamExpandableTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F53F426324627FEB000D81FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RamExpandableTable/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cybersoft.TestPushNotifications.RamExpandableTable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F53F426524627FEB000D81FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RamExpandableTableTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cybersoft.TestPushNotifications.RamExpandableTableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RamExpandableTable.app/RamExpandableTable";
+			};
+			name = Debug;
+		};
+		F53F426624627FEB000D81FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RamExpandableTableTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cybersoft.TestPushNotifications.RamExpandableTableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RamExpandableTable.app/RamExpandableTable";
+			};
+			name = Release;
+		};
+		F53F426824627FEB000D81FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RamExpandableTableUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cybersoft.TestPushNotifications.RamExpandableTableUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RamExpandableTable;
+			};
+			name = Debug;
+		};
+		F53F426924627FEB000D81FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RamExpandableTableUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cybersoft.TestPushNotifications.RamExpandableTableUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = RamExpandableTable;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F53F422F24627FE9000D81FA /* Build configuration list for PBXProject "RamExpandableTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F53F425F24627FEB000D81FA /* Debug */,
+				F53F426024627FEB000D81FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F53F426124627FEB000D81FA /* Build configuration list for PBXNativeTarget "RamExpandableTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F53F426224627FEB000D81FA /* Debug */,
+				F53F426324627FEB000D81FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F53F426424627FEB000D81FA /* Build configuration list for PBXNativeTarget "RamExpandableTableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F53F426524627FEB000D81FA /* Debug */,
+				F53F426624627FEB000D81FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F53F426724627FEB000D81FA /* Build configuration list for PBXNativeTarget "RamExpandableTableUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F53F426824627FEB000D81FA /* Debug */,
+				F53F426924627FEB000D81FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F53F424024627FE9000D81FA /* RamExpandableTable.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F53F424124627FE9000D81FA /* RamExpandableTable.xcdatamodel */,
+			);
+			currentVersion = F53F424124627FE9000D81FA /* RamExpandableTable.xcdatamodel */;
+			path = RamExpandableTable.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F53F422C24627FE9000D81FA /* Project object */;
+}
